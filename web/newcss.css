@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 nov. 2018, 18:32:50
+    Author     : qs
+*/
+
+
+.body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.wrapper {
+  width: 60em;
+  margin: 20px auto;
+}
+
+.textarea:focus,
+.input:focus {
+  outline: none;
+}
+
+.form {
+  padding: 20px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+.form__field {
+  position: relative;
+}
+.form__field i {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  opacity: 0;
+  color: #4CAF50;
+}
+.form__title {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px auto;
+  font-size: 1.2em;
+}
+.form__label {
+  display: none;
+}
+.form__input {
+  margin-bottom: 10px;
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #CCC;
+  trasnition: 400ms;
+}
+.form__input:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: #F44336;
+}
+.form__input:hover, .form__input:focus {
+  border-color: #999999;
+}
+.form__input:valid {
+  border-color: #4CAF50;
+}
+.form__input:valid + i {
+  opacity: 1;
+}
+.form__submit {
+  background: #F06292;
+  color: #FFF;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .3em;
+  cursor: pointer;
+}
